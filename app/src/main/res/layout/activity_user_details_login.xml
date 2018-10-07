@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/toolbar_color">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:maxLines="1"
+            android:text="Login User details"
+            android:textAllCaps="true"
+            android:fontFamily="@font/ssp_bold"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/h3"
+            android:ellipsize="end"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginTop="@dimen/common_20_dp"
+        style="@style/LeftRightMargin"
+        android:textSize="@dimen/h3"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ssp_regular"/>
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        android:layout_marginTop="4dp"
+        style="@style/LeftRightMargin"
+        android:textSize="@dimen/h3"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ssp_regular"/>
+
+    <TextView
+        android:id="@+id/user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_email"
+        android:layout_marginTop="4dp"
+        style="@style/LeftRightMargin"
+        android:textSize="@dimen/h3"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ssp_regular"/>
+
+    <TextView
+        android:id="@+id/tv_user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_phone"
+        android:layout_marginTop="4dp"
+        style="@style/LeftRightMargin"
+        android:textSize="@dimen/h3"
+        android:text="Password :"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ssp_semi_bold"/>
+
+    <TextView
+        android:id="@+id/user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_user_password"
+        app:layout_constraintTop_toBottomOf="@+id/user_phone"
+        android:layout_marginTop="4dp"
+        style="@style/LeftRightMargin"
+        android:textSize="@dimen/h3"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ssp_regular"/>
+
+
+</android.support.constraint.ConstraintLayout>

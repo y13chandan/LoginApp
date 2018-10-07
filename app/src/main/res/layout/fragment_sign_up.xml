@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/LeftRightMargin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.LoginFragment">
+
+    <TextView
+        android:id="@+id/heading_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ssp_bold"
+        android:gravity="left"
+        android:paddingBottom="@dimen/padding_l"
+        android:paddingTop="@dimen/padding_l"
+        android:text="@string/sign_up"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/icon_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:paddingEnd="@dimen/padding_drawables"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@xml/ic_person_grey_24dp"
+        android:paddingRight="@dimen/padding_drawables"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/il_name"
+        app:layout_constraintBottom_toBottomOf="@+id/il_name"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/il_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:layout_marginLeft="@dimen/padding_l"
+        app:layout_constraintLeft_toRightOf="@+id/icon_person"
+        app:layout_constraintTop_toBottomOf="@+id/heading_signup"
+        app:hintTextAppearance="@style/EditTextHint">
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textCapWords"
+            android:textColorHint="@color/l_grey" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/icon_email"
+        android:layout_marginTop="8dp"
+        android:paddingEnd="@dimen/padding_drawables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@xml/ic_email_white_24dp"
+        android:paddingRight="@dimen/padding_drawables"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/il_email"
+        app:layout_constraintBottom_toBottomOf="@+id/il_email"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/il_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_marginLeft="@dimen/padding_l"
+        app:layout_constraintLeft_toRightOf="@+id/icon_email"
+        app:layout_constraintTop_toBottomOf="@+id/il_name"
+        app:hintTextAppearance="@style/EditTextHint">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/l_grey" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/icon_phone"
+        android:layout_marginTop="8dp"
+        android:paddingEnd="@dimen/padding_drawables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@xml/ic_call_14dp"
+        android:paddingRight="@dimen/padding_drawables"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/il_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/il_phone"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/il_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:layout_marginLeft="@dimen/padding_l"
+        app:layout_constraintLeft_toRightOf="@+id/icon_phone"
+        app:layout_constraintTop_toBottomOf="@+id/il_email"
+        app:hintTextAppearance="@style/EditTextHint">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/l_grey" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/icon_password"
+        android:layout_marginTop="8dp"
+        android:paddingEnd="@dimen/padding_drawables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@xml/ic_email_white_24dp"
+        android:paddingRight="@dimen/padding_drawables"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/il_password"
+        app:layout_constraintBottom_toBottomOf="@+id/il_password"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/il_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_marginLeft="@dimen/padding_l"
+        app:layout_constraintLeft_toRightOf="@+id/icon_password"
+        app:layout_constraintTop_toBottomOf="@+id/il_phone"
+        app:hintTextAppearance="@style/EditTextHint">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/user_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/l_grey" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_40_dp"
+        android:background="@drawable/button_round"
+        android:drawablePadding="@dimen/padding_n"
+        android:fontFamily="@font/ssp_bold"
+        android:text="@string/done"
+        android:paddingLeft="@dimen/padding_l"
+        android:paddingStart="@dimen/padding_l"
+        android:paddingEnd="@dimen/padding_l"
+        android:paddingRight="@dimen/padding_l"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/il_password"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/button_sign_up"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tv_not_accoutn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button_sign_up"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        android:layout_marginTop="@dimen/common_30_dp"
+        android:text="Already Registered!"
+        android:textSize="@dimen/h4"
+        android:fontFamily="@font/ssp_regular" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_me"
+        android:textSize="@dimen/h3"
+        app:layout_constraintTop_toBottomOf="@+id/button_sign_up"
+        app:layout_constraintLeft_toRightOf="@+id/guideline"
+        android:layout_marginTop="@dimen/common_28_dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/ssp_bold"
+        android:textColor="@color/jsOrange"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+</android.support.constraint.ConstraintLayout>

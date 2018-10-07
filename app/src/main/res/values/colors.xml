@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#517572</color>
+    <color name="colorAccent">#517572</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="toolbar_color">#517572</color>
+    <color name="jsOrange">#F57A55</color>
+    <color name="black">#000000</color>
+    <color name="d_grey">#6C6C6C</color>
+    <color name="l_grey">#EAEAEA</color>
+    <color name="yellow">#fae939</color>
+</resources>
