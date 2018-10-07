@@ -91,7 +91,7 @@ public class LoginFragment extends Fragment implements OnEventClickListener, Rad
     }
 
     @Override
-    public void onCheckedChanged(RadioGroup radioGroup, int i) {
+    public void onCheckedChanged(RadioGroup radioGroup, int i) { // on clicking the radio button it will set the respective page
         RadioButton checkedRadioButton = (RadioButton)radioGroup.findViewById(i);
         int index = radioGroup.indexOfChild(checkedRadioButton);
         mLoginPager.setCurrentItem(index);
